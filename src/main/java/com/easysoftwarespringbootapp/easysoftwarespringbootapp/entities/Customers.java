@@ -17,8 +17,11 @@ public class Customers {
     @Column(unique = true)
     private String customerId;
 
-    @JsonProperty(value = "name")
-    private String name;
+    @JsonProperty(value = "firstname")
+    private String firstname;
+
+    @JsonProperty(value = "lastname")
+    private String lastname;
 
     @JsonProperty(value = "phoneNo")
     private String phoneNo;

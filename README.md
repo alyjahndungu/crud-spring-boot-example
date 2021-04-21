@@ -13,7 +13,8 @@ Json Body =
 
 {
 "customerId":"EP-0001",
-"name":"Elijah Ndung'u",
+"firstname":"Elijah",
+"lastname":"Ndung'u",
 "phoneNo": "0741862008"
 }
 
