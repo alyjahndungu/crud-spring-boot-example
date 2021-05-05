@@ -26,4 +26,13 @@ public class Customers {
     @JsonProperty(value = "phoneNo")
     private String phoneNo;
 
+    public Customers() {
+    }
+
+    public Customers(String customerId, String firstname, String lastname, String phoneNo) {
+        this.customerId = customerId;
+        this.firstname = firstname;
+        this.lastname = lastname;
+        this.phoneNo = phoneNo;
+    }
 }

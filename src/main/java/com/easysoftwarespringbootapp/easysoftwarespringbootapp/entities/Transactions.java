@@ -50,5 +50,11 @@ public class Transactions {
     @JsonIgnore
     private Customers customers;
 
+    public Transactions(Long id, String transactionId) {
+        this.id = id;
+        this.transactionId = transactionId;
+    }
 
+    public Transactions() {
+    }
 }

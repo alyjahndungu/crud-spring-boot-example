@@ -6,6 +6,8 @@ import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.List;
+
 @Service
 @AllArgsConstructor
 public class CustomerService {
@@ -17,5 +19,9 @@ public class CustomerService {
         return  customerRepository.save(customers);
     }
 
+    @Transactional
+    public List<Customers> getAllCustomers(){
+        return customerRepository.findAll();
+    }
 
 }
